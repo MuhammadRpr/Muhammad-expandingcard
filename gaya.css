@@ -9,7 +9,6 @@ body {
    align-items: center;
    justify-content: center;
    height: 100vh;
-   overflow: hidden;
 }
 
 section {
@@ -21,7 +20,7 @@ section {
 
 .container {
    display: flex;
-   width: 90vw;
+   width: 100%;
 }
 
 .panel {
@@ -56,9 +55,11 @@ section {
    transition: opacity 0.3s ease-in 0.4s;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+
    .container {
-      width: 100vw;
+      flex-direction: column;
+      height: 1000px;
       transition: opacity 0.3s ease-in 0.4s;
    }
 
@@ -67,3 +68,4 @@ section {
       display: none;
    }
 }
+
